@@ -1,0 +1,108 @@
+.calculator input,
+.calc-button   {
+  font-family: 'Space Mono';
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* add some spacing */
+  body          {
+    background: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  /* limit the width and center */
+  .calculator .formstyle  {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 8px solid black;
+    border-radius: 50px;
+  }
+
+  .calc-button  {
+    background: black; /* light background with opacity 50% */
+    border: 4px solid black; /* black border */
+    padding: 15px;
+    color :white; /* white text */
+    border-radius: 70px; /* rounded corners */
+    font-size: 30px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+  }
+
+  .calc-button:hover {
+    background-color: gray;
+}
+
+  .calculator input   {
+    /* reset basic form styles */
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid #111;
+    color: #333;
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+  }
+
+
+  .calculator-buttons {
+    /* small spacing within our container */
+    padding: 20px;
+  
+    /* the grid stuff! */
+    display: grid;
+  
+    /* create 4 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .calculator-buttons {
+
+  
+    /* add the grid gap */
+    grid-gap: 15px;
+  }
+
+
+  /* span across 3 columns */
+.is-zero,
+.is-clear   {
+  grid-column: span 3;
+}
+
+/* go blue */
+.is-clear   {
+  background: #3572DB;
+}
+
+.is-equals {
+    background: orange;
+  }
+.plus {
+    background: orange;
+}
+.bru{
+    background: gray;
+}
+
+
+
+
+
+
+.textview{
+    width: 400px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: lightgreen;
+    }	
